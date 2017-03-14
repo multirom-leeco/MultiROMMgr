@@ -22,6 +22,29 @@
                     "path": "/dev/block/platform/soc.0/7824900.sdhci/by-name/cache"
                 }
             ]
-        }
+        },
+        {
+            "names": [ "x2", "LEX820", "LEX829", "le_x2", "LeMax2_CN", "LeMax2_NA" ],
+            "manifest_url": "https://raw.githubusercontent.com/multirom-leeco/multirom-leeco.github.io/x2-stable/manifest.json",
+            "check_gpg": false,
+            "kexec_check_path": "/sys/kernel/kexec_loaded",
+            "ubuntu_touch": {
+                "enabled": false
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/platform/soc/624000.ufshc/by-name/recovery"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/platform/soc/624000.ufshc/by-name/boot"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/platform/soc/624000.ufshc/by-name/cache"
+                }
+            ]
+        },
 	]
 }
