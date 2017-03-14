@@ -1,5 +1,27 @@
 {
     "devices": [
-        
-    ]
+        {
+            "names": [ "s2", "X526", "x526", "le_s2", "le_ww_s2", "le_s2_ww", "le_s2_na", "S2", "s3", "S3", "s2_na" ],
+            "manifest_url": "https://raw.githubusercontent.com/multirom-leeco/multirom-leeco.github.io/s2-stable/manifest.json",
+            "check_gpg": false,
+            "kexec_check_path": "/sys/kernel/kexec_loaded",
+            "ubuntu_touch": {
+                "enabled": false
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/platform/soc.0/7824900.sdhci/by-name/recovery"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/platform/soc.0/7824900.sdhci/by-name/boot"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/platform/soc.0/7824900.sdhci/by-name/cache"
+                }
+            ]
+        }
+	]
 }
