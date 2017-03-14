@@ -46,5 +46,28 @@
                 }
             ]
         },
+        {
+            "names": [ "x3", "X3", "x3_HK", "X3_HK", "x3_hk", "X3_hk", "x500", "x507", "x509", "X500", "X507", "X509" ],
+            "manifest_url": "https://raw.githubusercontent.com/multirom-leeco/multirom-leeco.github.io/x3-stable/manifest.json",
+            "check_gpg": false,
+            "kexec_check_path": "/sys/kernel/kexec_loaded",
+            "ubuntu_touch": {
+                "enabled": false
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name/recovery"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name/boot"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name/cache"
+                }
+            ]
+        }
 	]
 }
